@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: "vs2017-win2016"
 
 steps:
 - task: NodeTool@0
@@ -17,5 +17,5 @@ steps:
 
 - script: |
     npm install
-    npm run build
+    npm run buildT
   displayName: 'npm install and build'
